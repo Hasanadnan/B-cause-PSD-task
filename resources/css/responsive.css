@@ -1,0 +1,544 @@
+/* responsive nav  */
+
+@media (max-width: 992px) {
+  .nav-link {
+    margin-left: 0 !important;
+  }
+
+  .active a::after {
+    content: "";
+    width: 0;
+    height: 0;
+    background: #5597e5;
+    position: absolute;
+    left: 7.5%;
+    top: 111%;
+  }
+}
+
+@media (min-width: 800px) {
+  .site-header__wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 800px) {
+  .nav__wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: 800px) {
+  .nav__item a {
+    text-align: center;
+    border-left: 0;
+    border-bottom: 4px solid transparent;
+  }
+}
+
+@media (min-width: 800px) {
+  .nav__item svg {
+    display: block;
+    margin: 0 auto 0.5rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .nav__item.active a {
+    border-bottom-color: #589def;
+  }
+}
+
+@media (max-width: 799px) {
+  .nav__toggle {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+}
+
+@media (max-width: 799px) {
+  .nav__wrapper {
+    position: absolute;
+    top: calc(100% + 35px);
+    right: 0;
+    left: 0;
+    z-index: -1;
+    /* background-color: #1a1c1a; */
+    background-color: rgb(204, 60, 60);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  .nav__wrapper.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* responsive nav end  */
+
+/* responsive for all  */
+
+@media (min-width: 1200px) {
+  .work__details {
+    height: 150px;
+    width: 270px;
+    border: 3px solid #929291;
+    margin-left: 15px;
+    margin-top: 22px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* circle  */
+  .circle__image5 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* working side  */
+  .work__details {
+    height: 150px;
+    width: 270px;
+    border: 3px solid #929291;
+    margin-left: 15%;
+    margin-top: 22px;
+  }
+
+  .work__last {
+    height: 150px;
+    width: 270px;
+    border: 3px solid #929291;
+    margin-left: 35%;
+    margin-top: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* hero__text  */
+  .jumbotron {
+    height: 90vh;
+  }
+
+  .bg__white {
+    width: 70% !important;
+  }
+
+  .bg__white p {
+    margin-left: 8%;
+  }
+
+  /* main side  */
+  .view__center {
+    position: relative;
+  }
+
+  .responsive__btn1 {
+    margin-top: 0 !important;
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .responsive__margin1 {
+    margin-top: 70px !important;
+  }
+
+  /* female_side  */
+
+  .test__two {
+    height: 70px;
+    width: 70px;
+  }
+
+  .test__three {
+    height: 40px;
+    width: 40px;
+  }
+
+  .test__four {
+    height: 0px;
+    width: 180px;
+    margin-top: 85px;
+    margin-left: -120px;
+    border: 20px solid #42a1c2;
+  }
+
+  .test__four p {
+    margin-left: -10px;
+    font-size: 20px;
+  }
+
+  .test__three i {
+    font-size: 30px;
+    margin-left: 12px;
+    margin-top: 6px;
+  }
+
+  /* female side 2nd  */
+
+  .test__five {
+    height: 70px;
+    width: 70px;
+  }
+
+  .test__six {
+    height: 40px;
+    width: 40px;
+  }
+
+  .test__seven {
+    height: 0px;
+    width: 180px;
+    margin-top: 85px;
+    margin-left: -120px;
+    border: 20px solid #0372ba;
+  }
+
+  .test__seven p {
+    margin-left: -10px;
+    font-size: 20px;
+  }
+
+  .test__six i {
+    font-size: 25px;
+    margin-left: 9px;
+    margin-top: 7px;
+  }
+
+  /* circle side  */
+  .responsive_margin2 .col {
+    margin-left: 25px;
+  }
+
+  .responsive__4 {
+    margin-left: 50px;
+  }
+
+  /* question side  */
+  .question__title {
+    font-size: 20px;
+  }
+
+  .question__view {
+    font-size: 12px;
+  }
+
+  .question__height {
+    font-size: 40px;
+  }
+
+  .question__font p {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  /* working side  */
+  .work__details {
+    margin-left: 2%;
+  }
+
+  .work__last {
+    margin-left: 32%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* hero__text  */
+  .text__white h1 {
+    font-size: 24px;
+  }
+
+  .bg__white p {
+    margin-left: 7%;
+    font-size: 14px;
+  }
+
+  .float__right p:first-child {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .float__right p:last-child {
+    font-size: 12px;
+  }
+
+  /* details  */
+  .bg__all p {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .btn__details {
+    border-radius: 15px !important;
+
+    font-size: 9px;
+    width: 80px;
+  }
+
+  /* main__side  */
+  .test {
+    width: 10px;
+    height: 10px;
+  }
+
+  .one {
+    font-size: 35px;
+    margin-top: -20px;
+  }
+
+  .main__write {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .main__write p::after {
+    width: 220px;
+  }
+
+  .main__write p::before {
+    width: 220px;
+  }
+
+  .max__width p {
+    font-size: 12px;
+  }
+
+  .width__set p {
+    font-size: 12px;
+  }
+
+  .text__bottom {
+    font-size: 12px;
+  }
+
+  /* female__side  */
+  .female__title {
+    font-size: 13px;
+  }
+
+  .test__two {
+    height: 50px;
+    width: 50px;
+  }
+
+  .test__three {
+    height: 30px;
+    width: 30px;
+  }
+
+  .test__four {
+    height: 23px;
+    width: 130px;
+    margin-top: 82px;
+    margin-left: -100px;
+    border: 12px solid #42a1c2;
+  }
+
+  .test__four p {
+    margin-left: 18px;
+    font-size: 12px;
+    margin-top: -8px;
+  }
+
+  .test__three i {
+    font-size: 20px;
+    margin-left: 9px;
+    margin-top: 4px;
+  }
+
+  /* female side 2nd  */
+
+  .test__five {
+    height: 50px;
+    width: 50px;
+  }
+
+  .test__six {
+    height: 30px;
+    width: 30px;
+  }
+
+  .test__seven {
+    height: 23px;
+    width: 130px;
+    margin-top: 82px;
+    margin-left: -100px;
+    border: 12px solid #0372ba;
+  }
+
+  .test__seven p {
+    margin-left: 18px;
+    font-size: 12px;
+    margin-top: -8px;
+  }
+
+  .test__six i {
+    font-size: 15px;
+    margin-left: 9px;
+    margin-top: 7px;
+  }
+
+  /* circle  */
+  .cricle__image1 img {
+    margin-left: 18px;
+  }
+
+  .circle__image5 {
+    margin-left: 140px;
+  }
+
+  .responsive__4 {
+    margin-left: -10px;
+  }
+
+  /* all tabel  */
+  .table__head {
+    font-size: 15px;
+  }
+
+  .table__item {
+    font-size: 10px;
+  }
+
+  .table__view {
+    font-size: 10px;
+  }
+
+  /* image side  */
+
+  .image__head p {
+    font-size: 15px;
+  }
+  .responsive__display {
+    display: block;
+    margin-left: 14%;
+  }
+
+  /* question  */
+  .question__title {
+    font-size: 15px;
+  }
+
+  .question__view {
+    font-size: 8px;
+  }
+
+  .question__height {
+    height: 30px;
+    width: 30px;
+  }
+
+  .question__width {
+    margin-top: 5px;
+    margin-left: -12px;
+    height: 20px;
+    width: 440px;
+  }
+
+  .question__height p {
+    font-size: 15px;
+    margin-left: 4px;
+  }
+
+  .question__font p {
+    font-size: 8px;
+    margin-top: 1px;
+  }
+
+  /* working side  */
+  .work__details {
+    margin-left: 18%;
+  }
+
+  .work__last {
+    margin-left: 18%;
+  }
+
+  /* footer  */
+  .footer__font {
+    font-size: 12px;
+  }
+
+  .footer__left {
+    font-size: 11px;
+  }
+
+  .footer__button div {
+    margin-left: 15px;
+
+    font-size: 14px;
+  }
+
+  .footer__last div {
+    font-size: 12px;
+  }
+  .footer__last div {
+    font-size: 12px;
+  }
+
+  .footer__info p {
+    font-size: 12px;
+  }
+  .footer__info div {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 576px) {
+  /* main side  */
+  .text__bottom {
+    font-size: 10px;
+  }
+
+  .max__width p {
+    font-size: 12px;
+    margin: 0 3px;
+    width: 100%;
+  }
+
+  .width__set p {
+    font-size: 12px;
+    margin: 0 3px;
+    width: 100%;
+  }
+
+  /* circle  */
+  .cricle__image1 img {
+    margin-left: 20px;
+  }
+
+  .circle__image5 {
+    margin-left: 140px;
+  }
+
+  /* image side  */
+  .image__head p {
+    font-size: 15px;
+  }
+
+  .responsive__display {
+    display: block;
+    margin-left: -5px;
+  }
+
+  .image__fixed img {
+    width: 100%;
+  }
+
+  /* working side  */
+  .work__details {
+    margin-left: 90px;
+  }
+
+  .work__last {
+    margin-left: 90px;
+  }
+}
